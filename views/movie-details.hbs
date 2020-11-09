@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <img class="card-img-top img-card random-img" src={{movie.image}} />
+            <div class="card-body random-body">
+                <a href="/movies">Go back </a>
+                <h5 class="card-title">{{movie.title}}</h5>
+               <h6 class="card-subtitle"> Director: {{movie.director}}</h6> 
+      <br> 
+        <h6 >Stars</h6>
+        <ul>
+            {{#each movie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        </ul>
+        <p> {{movie.description }}</p>
+
+        <br> <p> {{movie.showtimes}} </p></br>
+                    
+        
+      
+    </div>
+</div>
+
+
+
